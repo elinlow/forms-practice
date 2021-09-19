@@ -3,11 +3,12 @@ body {
     color: white;
     font-style: normal;
     font-size: 18px;
-    font-style: 400;
+    font-weight: 400;
     width: 954px;
     height: 594px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .red-background {
@@ -28,8 +29,8 @@ form {
     font-family: 'Roboto', sans-serif;
 }
 
-placeholder {
-    color: white;
+label {
+    margin-bottom: 10px;
 }
 
 .line1, .line4 {
@@ -37,6 +38,7 @@ placeholder {
     text-align: left;
     margin-left: 0;
     color: #9DBEBB;
+    margin-bottom: 10px;
 }
 
 .line2, .line3 {
@@ -44,22 +46,64 @@ placeholder {
     text-align: left;
     margin-left: 0;
     color: #9DBEBB;
+    margin-bottom: 10px;
 }
 
 input {
     background-color: #BE0909;
     color: white;
     border: none;
+    letter-spacing: 0.1em;
+    cursor: pointer;
 }
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="message"]:hover, input[type="password"]:hover {
+    background-color: #da3434;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+  }
+  
 
 select {
     background-color: #BE0909;
     color: white;
 }
 
+select:hover {
+    background-color: #da3434;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
 button {
     background-color: #468189;
     color: white;
-    border-radius: 5px;
-    border-color: #468189;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    width: 202px;
+    height: 48px;
+    left: 407px;
+    top: 635px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+}
+
+img {
+    position: absolute;
 }

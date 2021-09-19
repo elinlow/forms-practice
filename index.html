@@ -14,10 +14,13 @@
         <div class="red-background">
             <form class="form" autocomplete="off">
                 <label for="name" class="label">FULL NAME</label>
-                <input type="text" name="name"> <!-- cols="10" rows="2" -->
+                <input type="text" name="name" id="name"> <!-- cols="10" rows="2" -->
                 <hr class="line1">
                 <label for="email" class="label">EMAIL</label>
-                <input type="email" name="email" placeholder="Your Email">
+                <input type="email" name="email" id="email" placeholder="Enter Email" required autofocus>
+                <hr class="line2">
+                <label for="password" class="label">PASSWORD</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required minlength="10">
                 <hr class="line2">
                 <label for="select" class="label">MESSAGE REGARDING</label>
                     <select name="type-of-msg" class="select" id="select">
@@ -27,11 +30,14 @@
                     </select>
                 <hr class="line3">
                 <label for="message" class="label">MESSAGE</label>
-                <input type="message" name="message" placeholder="Your Message">
-                <!-- <textarea name="message" id="" cols="10" rows="2"></textarea> -->
+                <input type="message" name="message" id="message" placeholder="Enter Message">
                 <hr class="line4">
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label class="checkbox-label">I like ducks!</label>
+                </div>
             </form>
-            <button type="submit">SEND MESSAGE</button>
+            <button type="submit" disabled>SEND MESSAGE</button>
         </div>
         <div class="yellow-background">
 
